@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import net.jpradatech.springboottest.exceptions.DineroInsuficienteException;
 
 @Entity
-@Table(name="cuentas")
+@Table(name = "cuentas")
 public class Cuenta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

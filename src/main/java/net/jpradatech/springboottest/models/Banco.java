@@ -8,13 +8,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="bancos")
+@Table(name = "bancos")
 public class Banco {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nombre;
-	@Column(name="total_transferencias")
+	@Column(name = "total_transferencias")
 	private int totalTransferencias;
 
 	public Banco() {
