@@ -44,6 +44,7 @@ public class CuentaController {
     return cuentaService.save(cuenta);
   }
 
+  /** función transferir method post. */
   @PostMapping("/transferir")
   public ResponseEntity<?> transferir(@RequestBody TransaccionDto dto) {
     cuentaService.transferir(dto.getCuentaOrigenId(), dto.getCuentaDestinoId(),
